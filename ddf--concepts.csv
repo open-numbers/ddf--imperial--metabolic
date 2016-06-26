@@ -1,0 +1,10 @@
+concept,name,concept_type
+name,Name,string
+year,Year,time
+sex,Sex,entity_domain
+country,Country,entity_domain
+sbp_mean_mm_hg,SBP mean (mm Hg),measure
+bmi_mean_kg_per_m2,BMI mean (kg per m2),measure
+tc_mean_mmol_per_l,TC mean (mmol per L),measure
+fpg_mean_mmol_per_l,FPG mean (mmol per L),measure
+diabetes_prevalence,Diabetes prevalence,measure
