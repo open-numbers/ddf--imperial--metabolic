@@ -1,0 +1,181 @@
+{
+    "name": "ddf--imperial--metabolic",
+    "language": {
+        "id": "en"
+    },
+    "resources": [
+        {
+            "path": "ddf--concepts.csv",
+            "name": "ddf--concepts",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "concept_type"
+                    }
+                ],
+                "primaryKey": "concept"
+            }
+        },
+        {
+            "path": "ddf--datapoints--bmi_mean_kg_per_m2--by--country--sex--year.csv",
+            "name": "ddf--datapoints--bmi_mean_kg_per_m2--by--country--sex--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "sex"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "bmi_mean_kg_per_m2"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "sex",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--diabetes_prevalence--by--country--sex--year.csv",
+            "name": "ddf--datapoints--diabetes_prevalence--by--country--sex--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "sex"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "diabetes_prevalence"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "sex",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--fpg_mean_mmol_per_l--by--country--sex--year.csv",
+            "name": "ddf--datapoints--fpg_mean_mmol_per_l--by--country--sex--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "sex"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "fpg_mean_mmol_per_l"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "sex",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--sbp_mean_mm_hg--by--country--sex--year.csv",
+            "name": "ddf--datapoints--sbp_mean_mm_hg--by--country--sex--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "sex"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "sbp_mean_mm_hg"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "sex",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--tc_mean_mmol_per_l--by--country--sex--year.csv",
+            "name": "ddf--datapoints--tc_mean_mmol_per_l--by--country--sex--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "sex"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "tc_mean_mmol_per_l"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "sex",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--entities--country.csv",
+            "name": "ddf--entities--country",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "country"
+                    }
+                ],
+                "primaryKey": "country"
+            }
+        },
+        {
+            "path": "ddf--entities--sex.csv",
+            "name": "ddf--entities--sex",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "sex"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": "sex"
+            }
+        }
+    ]
+}
